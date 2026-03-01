@@ -1,0 +1,197 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "Vulnerable Bank" [level=1] [ref=e4]
+    - navigation [ref=e5]:
+      - link "👤 Profile" [ref=e6] [cursor=pointer]:
+        - /url: "#profile"
+        - generic [ref=e7]: 👤
+        - text: Profile
+      - link "↗️ Money Transfer" [ref=e8] [cursor=pointer]:
+        - /url: "#transfers"
+        - generic [ref=e9]: ↗️
+        - text: Money Transfer
+      - link "💰 Loans" [ref=e10] [cursor=pointer]:
+        - /url: "#loans"
+        - generic [ref=e11]: 💰
+        - text: Loans
+      - link "📊 Transaction History" [ref=e12] [cursor=pointer]:
+        - /url: "#transactions"
+        - generic [ref=e13]: 📊
+        - text: Transaction History
+      - link "💳 Virtual Cards" [ref=e14] [cursor=pointer]:
+        - /url: "#virtual-cards"
+        - generic [ref=e15]: 💳
+        - text: Virtual Cards
+      - link "📃 Bill Payments" [ref=e16] [cursor=pointer]:
+        - /url: "#bill-payments"
+        - generic [ref=e17]: 📃
+        - text: Bill Payments
+      - link "🔒 Logout" [ref=e18] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e19]: 🔒
+        - text: Logout
+  - generic [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - heading "Welcome back, Ometee" [level=1] [ref=e23]
+        - paragraph [ref=e24]: Sunday, March 1, 2026
+      - generic [ref=e25]:
+        - generic [ref=e26]: Current Balance
+        - generic [ref=e27]: $706266.0
+        - generic [ref=e28]: "Account Number: 5268581218"
+    - generic [ref=e29]:
+      - generic [ref=e30] [cursor=pointer]:
+        - generic [ref=e31]: ↗️
+        - generic [ref=e32]: Send Money
+        - generic [ref=e33]: Transfer money to another account quickly and securely.
+      - generic [ref=e34] [cursor=pointer]:
+        - generic [ref=e35]: 💰
+        - generic [ref=e36]: Request Loan
+        - generic [ref=e37]: Need funds? Apply for a loan with competitive rates.
+      - generic [ref=e38] [cursor=pointer]:
+        - generic [ref=e39]: 💳
+        - generic [ref=e40]: Virtual Cards
+        - generic [ref=e41]: Create and manage your virtual payment cards.
+      - generic [ref=e42] [cursor=pointer]:
+        - generic [ref=e43]: 📃
+        - generic [ref=e44]: Pay Bills
+        - generic [ref=e45]: Pay your bills easily from your account.
+    - generic [ref=e46]:
+      - heading "Profile" [level=2] [ref=e48]
+      - generic [ref=e49]:
+        - img "Profile Picture" [ref=e50]
+        - generic [ref=e51] [cursor=pointer]: ✏️
+      - generic [ref=e52]:
+        - button "Change Profile Picture" [ref=e53] [cursor=pointer]
+        - button "Import from URL" [ref=e54] [cursor=pointer]
+    - generic [ref=e55]:
+      - heading "Money Transfer" [level=2] [ref=e57]
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]: Recipient Account Number
+          - textbox "Recipient Account Number" [ref=e61]:
+            - /placeholder: Enter recipient's account number
+        - generic [ref=e62]:
+          - generic [ref=e63]: Amount
+          - spinbutton "Amount" [ref=e64]
+        - generic [ref=e65]:
+          - generic [ref=e66]: Description (optional)
+          - textbox "Description (optional)" [ref=e67]:
+            - /placeholder: Add a note about this transfer
+        - button "Send Money" [ref=e68] [cursor=pointer]
+    - generic [ref=e69]:
+      - heading "Request a Loan" [level=2] [ref=e71]
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]: Loan Amount
+          - spinbutton "Loan Amount" [ref=e75]
+        - button "Submit Loan Request" [ref=e76] [cursor=pointer]
+      - generic [ref=e77]:
+        - heading "Your Loan Applications" [level=3] [ref=e78]
+        - table [ref=e79]:
+          - rowgroup [ref=e80]:
+            - row "Amount Status" [ref=e81]:
+              - columnheader "Amount" [ref=e82]
+              - columnheader "Status" [ref=e83]
+          - rowgroup [ref=e84]:
+            - row "$700066.00 approved" [ref=e85]:
+              - cell "$700066.00" [ref=e86]
+              - cell "approved" [ref=e87]
+            - row "$5000.00 approved" [ref=e88]:
+              - cell "$5000.00" [ref=e89]
+              - cell "approved" [ref=e90]
+    - generic [ref=e91]:
+      - heading "Transaction History" [level=2] [ref=e93]
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - generic [ref=e97]: "To: 22"
+            - generic [ref=e98]: 2026-02-25 23:51:14.188954
+          - generic [ref=e99]: "-$1.7"
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e102]: "To: 11"
+            - generic [ref=e103]: 2026-02-25 23:50:54.250770
+          - generic [ref=e104]: "-$0"
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]: "To: 778"
+            - generic [ref=e108]: 2026-02-25 23:50:47.114313
+          - generic [ref=e109]: "-$1.7"
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: "To: 5268581218"
+            - generic [ref=e113]: 2026-02-25 23:32:58.551684
+          - generic [ref=e114]: "-$0"
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - generic [ref=e117]: "From: 2329049699"
+            - generic [ref=e118]: 2026-02-25 23:32:44.699183
+          - generic [ref=e119]: +$0
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: "From: 2329049699"
+            - generic [ref=e123]: 2026-02-25 23:32:22.677620
+          - generic [ref=e124]: +$0
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]: "To: 2329049699"
+            - generic [ref=e128]: 2026-02-25 23:17:21.888109
+          - generic [ref=e129]: "-$100"
+        - generic [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e132]: "From: 2329049699"
+            - generic [ref=e133]: 2026-02-25 23:07:38.609761
+          - generic [ref=e134]: +$100
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - generic [ref=e137]: "To: 6777"
+            - generic [ref=e138]: 2026-02-25 22:47:43.551450
+          - generic [ref=e139]: "-$0"
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e142]: "To: 670996"
+            - generic [ref=e143]: 2026-02-25 22:47:28.707324
+          - generic [ref=e144]: "-$200"
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - generic [ref=e147]: "To: 100000"
+            - generic [ref=e148]: 2026-02-25 22:03:52.418938
+          - generic [ref=e149]: "-$200"
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - heading "Virtual Cards" [level=2] [ref=e152]
+        - button "Create New Card" [ref=e153] [cursor=pointer]
+      - generic [ref=e155]:
+        - generic [ref=e156]: STANDARD
+        - generic [ref=e157]: 5089 7110 1506 3969
+        - generic [ref=e158]:
+          - generic [ref=e159]: "Exp: 02/27"
+          - generic [ref=e160]: "CVV: 648"
+        - generic [ref=e161]: "Limit: $-5000"
+        - generic [ref=e162]: "Balance: $6000"
+        - generic [ref=e163]:
+          - button "Freeze" [ref=e164] [cursor=pointer]
+          - button "Details" [ref=e165] [cursor=pointer]
+          - button "History" [ref=e166] [cursor=pointer]
+          - button "Update Limit" [ref=e167] [cursor=pointer]
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - heading "Bill Payments" [level=2] [ref=e170]
+        - button "Pay Bill" [ref=e171] [cursor=pointer]
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - generic [ref=e175]: $-6000
+          - generic [ref=e176]: pending
+        - generic [ref=e177]:
+          - generic [ref=e178]: "Biller: CableTV Plus"
+          - generic [ref=e179]: "Category: Telecommunications"
+          - generic [ref=e180]: "Payment Method: virtual_card (Card ending in 3969)"
+          - generic [ref=e181]: "Reference: BILL1772057751"
+          - generic [ref=e182]: "Date: 2/25/2026, 10:15:51 PM"
+          - generic [ref=e183]: "Description: Bill Payment"
+  - img [ref=e186] [cursor=pointer]
+```
