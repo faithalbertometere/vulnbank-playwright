@@ -1,12 +1,15 @@
 // Test user credentials — matches accounts created during manual testing
+
+require('dotenv').config({ quiet: true });
+
 const USERS = {
   primary: {
-    username: 'Ometee',
-    password: '1234', // replace with actual password
+    username: process.env.username,
+    password: process.env.password, // replace with actual password
   },
   secondary: {
-    username: 'testVul2',
-    password: 'Mylove_57', // replace with actual password
+    username: process.env.username2,
+    password: process.env.password2, // replace with actual password
   },
 };
 

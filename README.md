@@ -70,5 +70,5 @@ npm run report
 
 - Tests run on both **Chrome** and **Safari** as configured in `playwright.config.js`
 - Failed tests automatically capture screenshots and videos
-- Each test file maps directly to a module from the QA bug report
+- Each test file maps directly to a test case
 - BUG-006 (session expiry) requires manual verification with a longer wait period

@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "Playwright automation framework for VulnBank QA assessment",
   "scripts": {
-    "test":           "playwright test",
-    "test:headed":    "playwright test --headed",
-    "test:login":     "playwright test tests/login.test.js",
-    "test:dashboard": "playwright test tests/dashboard.test.js",
-    "test:transfer":  "playwright test tests/transfer.test.js",
-    "test:upload":    "playwright test tests/profileUpload.test.js",
-    "test:reset":     "playwright test tests/passwordReset.test.js",
-    "report":         "playwright show-report"
+    "test":             "npx playwright test",
+    "test:headed":      "npx playwright test --headed",
+    "test:login":       "npx playwright test tests/login.test.js",
+    "test:dashboard":   "npx playwright test tests/dashboard.test.js",
+    "test:transfer":    "npx playwright test tests/transfer.test.js",
+    "test:upload":      "npx playwright test tests/profileUpload.test.js",
+    "test:reset":       "npx playwright test tests/passwordReset.test.js",
+    "report":           "npx playwright show-report"
   },
   "devDependencies": {
-    "@playwright/test": "^1.41.0"
+    "@playwright/test": "^1.41.0",
+    "dotenv": "^17.3.1"
   }
+ 
 }

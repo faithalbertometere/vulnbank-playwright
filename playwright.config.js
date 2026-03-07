@@ -8,12 +8,12 @@ module.exports = defineConfig({
   reporter: [['html', { outputFolder: 'playwright-report' }], ['list']],
   use: {
     baseURL: 'https://vulnbank.org',
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-    // { name: 'webkit',   use: { ...devices['Desktop Safari'] } },
+    { name: 'webkit',   use: { ...devices['Desktop Safari'] } },
   ],
 });

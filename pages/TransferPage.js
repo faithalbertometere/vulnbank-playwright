@@ -1,12 +1,12 @@
 class TransferPage {
   constructor(page) {
     this.page = page;
-    this.recipientInput  = page.locator('input[name*="recipient" i], input[placeholder*="account" i]');
-    this.amountInput     = page.locator('input[name*="amount" i], input[placeholder*="amount" i]');
-    this.submitButton    = page.locator('button[type="submit"], button:has-text("Send"), button:has-text("Transfer")');
     this.successMessage  = page.locator('.success, [class*="success"], [class*="alert-success"]');
     this.errorMessage    = page.locator('.error, .alert, [class*="error"], [class*="alert-danger"]');
     this.pinInput        = page.locator('input[name*="pin" i], input[placeholder*="pin" i]');
+    this.recipientInput = page.locator('#recipient_account, [placeholder*="recipient" i]');
+    this.amountInput    = page.locator('#amount');
+    this.submitButton   = page.locator('button:has-text("Send Money")');
   }
 
   async goto() {
