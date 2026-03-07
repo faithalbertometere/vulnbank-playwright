@@ -16,7 +16,7 @@ test.describe('Account Creation & Login', () => {
 
     // Take screenshot as evidence of what happened
     await page.screenshot({
-      path: 'test-results/bug-001-login-bypass.png',
+      path: `test-results/bug-001-login-bypass-${Date.now()}.png`,
       fullPage: true
     });
 
@@ -70,7 +70,7 @@ test.describe('Account Creation & Login', () => {
 
     // Take screenshot as evidence
     await page.screenshot({
-      path: 'test-results/bug-009-blank-username.png',
+      path: `test-results/bug-009-blank-username-${Date.now()}.png`,
       fullPage: true
     });
 
@@ -91,7 +91,7 @@ test.describe('Account Creation & Login', () => {
 
     // Take screenshot as evidence
     await page.screenshot({
-      path: 'test-results/bug-010-weak-password-accepted.png',
+      path: `test-results/bug-010-weak-password-accepted-${Date.now()}.png`,
       fullPage: true
     });
 

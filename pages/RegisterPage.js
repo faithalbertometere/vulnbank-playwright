@@ -5,7 +5,6 @@ class RegisterPage {
     this.passwordInput = page.locator('input[name="password"], input[type="password"]');
     this.registerButton = page.locator('button[type="submit"], button:has-text("Register"), input[type="submit"]');
     this.errorMessage   = page.locator('.error, .alert, [class*="error"], [class*="alert"]');
-    // this.successMessage = page.locator('.success, [class*="success"]');
     this.successMessage = page.locator('#message');
   }
 
@@ -24,15 +23,12 @@ class RegisterPage {
     return await this.errorMessage.textContent();
   }
 
-  // async isSuccessful() {
-  //   // After successful registration, expect redirect away from /register
-  //   return !this.page.url().includes('/register');
-  // }
+ 
   async isSuccessful() {
-  await this.successMessage.waitFor({ state: 'visible' });
-  const message = await this.successMessage.textContent();
-  return message.includes('Registration successful');
-}
+    await this.successMessage.waitFor({ state: 'visible' });
+    const message = await this.successMessage.textContent();
+    return message.includes('Registration successful');
+  }
 }
 
 module.exports = { RegisterPage };
