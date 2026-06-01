@@ -104,3 +104,4 @@ npm run report
 - Playwright automatically waits for navigation; explicit waits are used only where necessary for dynamic content.
 
 
+test
